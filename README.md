@@ -100,4 +100,6 @@ There are roughly 5 ways in which you would do it. It doesn't matter if your cod
 
 The code you vendor is licensed at the time you import it. So, make sure to link to the commit at which you vendored the code if you think it may change. For example if v0 -> v8 are MIT and then v9 is GPL, then you can vendor (as MIT) any version prior to the v9 switch.    
 
-As the 'legality' here is about lawyer-work on interpreting how credit is given, there's a possible argument that you _dont_ even need to link to the license as we collectively agreed upon a standardized notation for licenses ([SPDX](https://spdx.dev)) which means you can write `// MIT (author)` and that _should_ conform to the license. This works because there's no other version of the MIT license, and because contextually we know that we're refering to the SPDX shortcut name.
+As the 'legality' here is about lawyer-work on interpreting how credit is given, there's a possible argument that you _dont_ even need to link to the license as we collectively agreed upon a [standardized notation](https://spdx.org/licenses/) for licenses ([SPDX](https://spdx.dev)) which means you can write `// MIT (author)` and that _should_ conform to the license for small usage. This works because there's no other "version" of the MIT license making it unambiguous, and because contextually we know that this comment is refering to the SPDX shortcut name.
+
+I don't think that level of minimalism is too useful though.
