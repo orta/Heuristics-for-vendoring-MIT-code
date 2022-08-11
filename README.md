@@ -8,9 +8,9 @@ Is what you are trying to conform to in the MIT license.
 
 Prefer video? [An overview of different code licenses](https://www.youtube.com/watch?v=0r7JcN3Q_LY) and how to use them in your code in a talk I gave at Artsy 2015. There's a few cool new licenses since then, but nothing you would be using in everyday code.
 
---
+### So, you want to vendor some code. 
 
-So, you want to vendor some code. There are roughly 5 ways in which you would do it. It doesn't matter if your code is OSS or closed-source, as the license still applies:
+There are roughly 5 ways in which you would do it. It doesn't matter if your code is OSS or closed-source, as the license still applies:
 
 1. **Let your package manager do it for you**. You're always doing this all the time. This works because the package manager includes the license file or references it in the package manifest. 
 
@@ -94,3 +94,8 @@ So, you want to vendor some code. There are roughly 5 ways in which you would do
     ```
 
     For MIT you _do not_ need to keep track of changes (some licenses do, in those cases use a repo fork with git submodules IMO) you just keep the original reference around.
+
+
+### Things worth keeping in mind
+
+The code you vendor is licensed at the time you import it. So, make sure to link to the commit at which you vendored the code if you think it may change. For example if v0 -> v8 are MIT and then v9 is GPL, then you can vendor (as MIT) any version prior to the v9 switch.    
