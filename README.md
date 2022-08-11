@@ -33,7 +33,7 @@ So, you want to vendor some code. There are roughly 5 ways in which you would do
 
 
 3. You are copying a whole file. You can either: 
-   - Add a reference comment going back to the original. For example in shikijs we have auto-updating themes based on other people's repos. What we do there is:
+   `. Add a reference comment going back to the original. For example in shikijs we have auto-updating themes based on other people's repos. What we do there is:
 
         ```json
         {
@@ -45,7 +45,7 @@ So, you want to vendor some code. There are roughly 5 ways in which you would do
             "cobol",
             
         ```
-    - Make a folder which includes a full copy of the license, and that specific file:
+    2. Make a folder which includes a full copy of the license, and that specific file:
 
         ```
         tree .
