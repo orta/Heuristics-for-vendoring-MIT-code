@@ -31,6 +31,19 @@ So, you want to vendor some code. There are roughly 5 ways in which you would do
 
     > Note: this is what you're meant to do with code stack overflow code.
 
+    > Note 2: Referencing the git commit and the original LOC is optional, you **only** need the reference to the license. That said, licenses can change - so this is future-proofing.
+
+    ```ts
+    // Originally taken from shikijs because we needed it in how
+    // https://github.com/shikijs/shiki/blob/main/LICENSE
+
+    function isPlaintext(lang: string | null | undefined) {
+        return !lang || ['plaintext', 'txt', 'text'].includes(lang)
+    }
+    ```
+
+    Is totally OK.
+
 
 3. You are copying a whole file. You can either: 
    `. Add a reference comment going back to the original. For example in shikijs we have auto-updating themes based on other people's repos. What we do there is:
