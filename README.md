@@ -14,7 +14,7 @@ So, you want to vendor some code. There are roughly 5 ways in which you would do
 
 1. **Let your package manager do it for you**. You're always doing this all the time. This works because the package manager includes the license file or references it in the package manifest. 
 
-   Not all package managers ensure licensing info to be fair though, so even then you may need to _manually_ verify the license is referenced in their code (I used to use [danger-plugin-yarn](https://github.com/orta/danger-plugin-yarn) to highlight this) 
+   Not all package managers ensure licensing info exists, so even then you may need to _manually_ verify the license is referenced in their code (I used to use [danger-plugin-yarn](https://github.com/orta/danger-plugin-yarn) to highlight this) 
 
   
 2. **You are copying a few lines of code** or a function. Add a reference comment going back to the original:
