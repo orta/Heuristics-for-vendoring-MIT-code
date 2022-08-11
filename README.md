@@ -29,7 +29,7 @@ So, you want to vendor some code. There are roughly 5 ways in which you would do
     }
     ```
 
-    > Note: this is what you're meant to do with code stack overflow code.
+    > Note: this is what you're meant to do with code from StackOverflow.
 
     > Note 2: Referencing the git commit and the original LOC is optional, you **only** need the reference to the license. That said, licenses can change - so this is future-proofing.
 
