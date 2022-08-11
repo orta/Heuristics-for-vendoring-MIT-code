@@ -20,7 +20,7 @@ So, you want to vendor some code. There are roughly 5 ways in which you would do
 2. **You are copying a few lines of code** or a function. Add a reference comment going back to the original:
 
     ```ts
-    // Originally taken from shikijs because we needed it in how
+    // Originally taken from shikijs because it was not exported, I've sent a PR upstream
     // https://github.com/shikijs/shiki/blob/33ae6b97eda78484460ac05b3338bc72a605194a/packages/shiki/src/highlighter.ts#L210
     // License MIT: https://github.com/shikijs/shiki/blob/33ae6b97eda78484460ac05b3338bc72a605194a/LICENSE
 
@@ -34,8 +34,7 @@ So, you want to vendor some code. There are roughly 5 ways in which you would do
     > Note 2: Referencing the git commit and the original LOC is optional, you **only** need the reference to the license. That said, licenses can change - so this is future-proofing.
 
     ```ts
-    // Originally taken from shikijs because we needed it in how
-    // https://github.com/shikijs/shiki/blob/main/LICENSE
+    // Originally from shikijs https://github.com/shikijs/shiki/blob/main/LICENSE
 
     function isPlaintext(lang: string | null | undefined) {
         return !lang || ['plaintext', 'txt', 'text'].includes(lang)
